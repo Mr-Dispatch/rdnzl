@@ -64,7 +64,9 @@ the SBCL FFI."
     ;; only needed for WIDE-CHAR fake below
     (ffi-unsigned-short 'sb-alien:unsigned-short)
     (ffi-float 'sb-alien:single-float)
-    (ffi-double 'sb-alien:double-float)))
+    (ffi-double 'sb-alien:double-float)
+    (ffi-short-integer 'sb-alien:short)
+    (ffi-long-integer 'sb-alien:long)))
 
 (defmacro ffi-define-function* ((lisp-name c-name)
                                 arg-list
