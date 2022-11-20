@@ -247,16 +247,28 @@ called after DllEnsureInit has been called."
   ffi-void)
 
 (ffi-define-function "getDotNetContainerShortValue"
-		     ((ptr ffi-void-pointer))
-		     ffi-short-integer)
+    ((ptr ffi-void-pointer))
+  ffi-short-integer)
 
 (ffi-define-function "getDotNetContainerIntValue"
-		     ((ptr ffi-void-pointer))
-		     ffi-integer)
+    ((ptr ffi-void-pointer))
+  ffi-integer)
 
 (ffi-define-function "getDotNetContainerLongValue"
-		     ((ptr ffi-void-pointer))
-		     ffi-long-integer)
+    ((ptr ffi-void-pointer))
+  ffi-long-integer)
+
+(ffi-define-function "getDotNetContainerUnsignedShortValue"
+    ((ptr ffi-void-pointer))
+  ffi-unsigned-short)
+
+(ffi-define-function "getDotNetContainerUnsignedIntValue"
+    ((ptr ffi-void-pointer))
+  ffi-unsigned)
+
+(ffi-define-function "getDotNetContainerUnsignedLongValue"
+    ((ptr ffi-void-pointer))
+  ffi-unsigned-long)
 
 (ffi-define-function "getDotNetContainerCharValue"
     ((ptr ffi-void-pointer))
